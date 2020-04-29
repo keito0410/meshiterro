@@ -19,24 +19,23 @@
                       <span class="fa fa-user form-control-icon" aria-hidden="true"></span>
                     </div>
                     <div class="form-group has-icon">
-                    <div class="form-group has-icon">
                       <label class="control_label sr-only" for="inputEnail">Email</label>
                       <%= f.email_field :email, class:"form-control", id:"inputEmail", placeholder:"メールアドレス"%>
                       <span class="fa fa-envelope form-control-icon" aria-hidden="true"></span>
                     </div>
                     <div class="form-group has-icon">
                       <label class="control_label sr-only" for="inputPassword">Password</label>
-                      <%= f.password_field :possword, autofocus: "off", class:"form-control", id:"inputPassword", placeholder:"パスワード"%>
+                      <%= f.password_field :possword, autocomplete: "off", class:"form-control", id:"inputPassword", placeholder:"パスワード"%>
                       <span class="fa fa-lock form-control-icon" aria-hidden="true"></span>
                     </div>
                     <div class="form-group has-icon">
                       <label class="control_label sr-only" for="inputConfirmPassword">Password</label>
-                      <%= f.password_field :possword, autofocus: "off", class:"form-control", id:"inputConfirmPassword", placeholder:"パスワード確認"%>
-                      <span class="fa fa-check form-control-icon" aria-hidden="true"></span>
+                      <%= f.password_field :possword_confirmation, autocomplete: "off", class:"form-control", id:"inputConfirmPassword", placeholder:"パスワード確認"%>
+                      <span class="fa fa-check-circle-o form-control-icon" aria-hidden="true"></span>
                     </div>
                       <%= f.submit"新規登録", class:"btn btn-lg btn-block btn-base-1 mt-20" %>
                       <% end %>
-                    </div>
+    
 
           
                 </div>
