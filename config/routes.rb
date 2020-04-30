@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   	resource :favorites, only: [:create, :destroy]
   	resource :post_comments, only: [:create, :destroy]
   end
+    resources :users, only: [:show]
     devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
